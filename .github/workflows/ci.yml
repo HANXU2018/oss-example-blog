@@ -12,7 +12,12 @@ jobs:
       run: |
         npm install
         npm install -g hexo-cli
+    - name: generate blog
+      run : |
         hexo generate
+        ls
+        dir
+        ll
     - uses: manyuanrong/setup-ossutil@v1.0
       with:
         # endpoint 可以去oss控制台上查看
